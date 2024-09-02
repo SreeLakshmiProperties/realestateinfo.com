@@ -1,0 +1,322 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #023047; /* Dark navy for text */
+    background: #8ecae6; /* Light blue background for body */
+}
+
+/* Header Section */
+.header {
+    background: url('https://i.ibb.co/dmz8p1M/pexels-pixabay-210617.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 70px; /* Increased logo size */
+}
+
+.site-title {
+    font-size: 1.5rem;
+    color: #023047;
+    font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background: rgba(2, 48, 71, 0.6); /* Semi-transparent dark navy overlay */
+    color: #ffffff;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fb8500; /* Vibrant orange for emphasis */
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.cta-container {
+    display: flex;
+    gap: 10px;
+}
+
+.cta-button, .whatsapp-button {
+    background: #ffb703; /* Bright yellow-orange for call-to-action */
+    color: #023047; /* Dark navy text on buttons */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cta-button:hover, .whatsapp-button:hover {
+    background: #fb8500; /* Vibrant orange on hover */
+    transform: translateY(-5px); /* Hover animation */
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 50px 20px; /* Increased padding for better spacing */
+    background: #ffffff; /* White background for stat section */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.stat-item {
+    text-align: center;
+    color: #fb8500; /* Vibrant orange for stat numbers */
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #000000; /* Black text for readability */
+}
+
+/* About Us Section */
+.about-us {
+    background: url('https://i.ibb.co/5ssXdRh/pexels-fauxels-3184465.jpg') no-repeat center center/cover;
+    padding: 70px 20px; /* Increased padding for section spacing */
+    display: flex;
+    align-items: center;
+    color: #000000; /* Black text for better readability */
+}
+
+.about-us-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-us {
+    padding: 50px 20px; /* Increased padding for section spacing */
+    text-align: center;
+    background: #219ebc; /* Blue background for contact section */
+    color: #ffffff;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: #fb8500; /* Vibrant orange for contact button */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background: #ffb703; /* Bright yellow-orange on hover */
+    transform: translateY(-5px); /* Hover animation */
+}
+/* Section 3 (Pillars of Success) Styling */
+.pillars-section {
+    padding: 60px 20px;
+    background-color: #023047;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pillars-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffb703;
+}
+
+.pillars-section h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fb8500;
+}
+
+.pillars-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pillar {
+    flex: 1 1 calc(25% - 30px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pillar .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.pillar h4 {
+    font-size: 20px;
+    color: #ffb703;
+    margin-bottom: 10px;
+}
+
+.pillar p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pillars-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar {
+        flex: 1 1 100%;
+    }
+}
+/* Contact Information Section Styling */
+.contact-info-section {
+    padding: 40px 20px;
+    background-color: #8ecae6;
+    color: #023047;
+    text-align: left;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.working-hours, .address {
+    flex: 1 1 45%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.working-hours h3, .address h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fb8500;
+}
+
+.working-hours ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #023047;
+}
+
+.address p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    color: #023047;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .working-hours, .address {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* Footer Styling */
+.footer {
+    background: #023047; /* Dark navy background for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
